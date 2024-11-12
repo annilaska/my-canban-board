@@ -1,0 +1,193 @@
+.detailSection {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 1em;
+    padding: 1em 2em;
+    margin-top: 2em;
+    height: 30em;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+
+.editButton, .deleteButton {
+    background-color: #800080;
+    color: rgba(255, 255, 255, 0.87);
+    border: 0.1em solid #800080;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    width: 8em;
+    transition: all 0.6s ease-in-out;
+}
+
+.editButton:hover, .deleteButton:hover {
+    background: none;
+    border: 0.1em solid #242424;
+    color: #242424;
+    font-weight: 600;
+    transition: 0.35s;
+}
+
+.editButton:not(:hover), .deleteButton:not(:hover) {
+    transition: 0.6s;
+}
+
+.editButton:active, .deleteButton:active {
+    transform: scale(0.95);
+    transition: 0s;
+}
+
+.taskNotFound {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+
+.closeButton {
+    background: #800080;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -3.8em 0 0 0;
+    padding: 0.1em;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background: #a006a0;
+    transform: scale(1.13);
+    transition: 0.35s;
+}
+
+.closeButton:active {
+    transform: scale(1);
+    background: #800080;
+    transition: 0s;
+}
+
+.closeButton:not(:hover) {
+    transition: 0.6s;
+}
+
+
+.closeLink {
+    align-self: flex-end;
+}
+
+.closeIcon {
+    height: 2.5em;
+}
+
+.description {
+    font-style: italic;
+    margin: 0 0 1em 0;
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 400;
+    background-color: #242424;
+    padding: 2em;
+    border-radius: 1em;
+    min-height: 19em;
+    box-sizing: border-box;
+    resize: none;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    font-size: 1em;
+    border: none;
+}
+
+
+.textTitle {
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 500;
+    background-color: #242424;
+    padding: 1em;
+    border-radius: 0.6em;
+    font-size: 1em;
+    margin: 0.5em 0 0.4em 0;
+    box-sizing: border-box;
+    resize: none;
+    text-align: center;
+    font-family: 'Nunito Sans';
+    border: none;
+    height: 3.6em;
+    cursor: initial;
+}
+
+.textTitle:active, 
+.textTitle:hover, 
+.textTitle:focus,
+.description:active,
+.description:hover,
+.description:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.doneButton {
+    margin: -3.6em 0 1em 0;
+    background: #800080;
+    border: none;
+    padding: 0.7em;
+    border-radius: 50%;
+    cursor: pointer;
+    align-self: flex-end;
+    height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.doneButton:hover {
+    background: #a006a0;
+    transform: scale(1.13);
+    transition: 0.35s;
+}
+
+.doneButton:active {
+    transform: scale(1);
+    background: #800080;
+    transition: 0s;
+}
+
+.doneButton:not(:hover) {
+    transition: 0.6s;
+}
+
+
+.halper {
+    color: #800080;
+    background: rgba(255, 255, 255);
+    z-index: 555;
+    margin-top: -10em;
+    border-radius: 0.3em;
+    padding: 1.5em;
+    align-self: center;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all 0.6s ease-in-out;
+}
+
+

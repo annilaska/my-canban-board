@@ -1,0 +1,30 @@
+.board {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+}
+
+.card {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242424;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.CardName {
+    color: rgba(255, 255, 255, 0.87);;
+    font-size: 20px;
+    font-weight: 400;
+    border-color: rgba(255, 255, 255, 0.87);;
+    width: 100%;
+    height: 2em;
+}
+
+.counter {
+    color: black;
+    font-size: 20px;
+}

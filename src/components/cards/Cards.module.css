@@ -1,0 +1,134 @@
+
+.card {
+    color: #242424;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.35s;
+}
+
+.buttonsBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.titlesBlockButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.newTaskButton, .addButton {
+    background: #800080;
+    border: 0.1em solid #800080;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    width: 100%; 
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 1em;
+}
+
+.addButton {
+    margin: 1em 0;
+}
+
+.addButton:hover {
+    background: #680268;
+    border: 0.1em solid #680268;
+}
+
+.addButton:active {
+    transform: scale(0.97);
+}
+
+.newTaskButton {
+    margin: 1em 1.5em 1em 0;
+}
+
+.newTaskButton:hover {
+    background: none;
+    border: 0.1em solid #800080;
+    color: #b106b1;
+    box-sizing: border-box;
+    transition: 0.35s;
+}
+
+.newTaskButton:active {
+    transform: scale(0.97);
+    transition: 0s;
+}
+
+.titlesWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-sizing: border-box;
+}
+
+.titles {
+    margin: 1em 1.5em;
+    font-weight: 500;
+    text-align: start;
+}
+
+
+.titleLink, .titleLink :hover {
+    text-decoration: none;
+    color: #242424;
+}
+
+
+.editButton:hover, .trashButton:hover{
+    transform: scale(1.13);
+    transition: 0.35s;
+}
+
+.titleLink:hover {
+    transform: scale(1.1);
+    transition: 0.35s;
+}
+
+.titleLink:not(:hover), .editButton:not(:hover), .trashButton:not(:hover) {
+    transition: 0.6s;
+}
+
+
+.editButton, .trashButton {
+    background: none;
+    cursor: pointer;
+    margin: 0.2em;
+    border: none;
+}
+
+
+.icon {
+    height: 1.7em;
+}
+
+.mockNoTask {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.counter {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #800080;
+    border-radius: 50%;
+    width: 1.5em;
+    margin: -3em 1em 3em 1em;
+    align-self: flex-end;
+}
+
+/* @media (max-width: 1265px) {
+    
+} */

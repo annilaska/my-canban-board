@@ -22,6 +22,9 @@ const EditTaskForm = ({ setEditFormVisible, taskId, setData, dataArray, descript
                 return {...task, title: e.target.value}
             } else {
                 setNotification(true)
+                setTimeout(() => {
+                    setNotification(false)
+                }, 4000)
             }
             return task
         })

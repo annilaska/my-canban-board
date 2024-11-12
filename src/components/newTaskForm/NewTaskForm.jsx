@@ -22,6 +22,9 @@ const NewTaskForm = ({setFormVisible, newTaskForm}) => {
             newTaskForm(values.title, values.description)
         } else if (!values.title && values.description) {
             setNotification(true)
+            setTimeout(() => {
+                setNotification(false)
+            }, 4000)
         } else {
             setFormVisible(false)
         }

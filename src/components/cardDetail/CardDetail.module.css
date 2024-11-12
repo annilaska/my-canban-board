@@ -132,7 +132,7 @@
     text-align: center;
     font-family: 'Nunito Sans';
     border: none;
-    height: 3.6em;
+    /* height: 3.6em; */
     cursor: initial;
 }
 
@@ -191,3 +191,13 @@
 }
 
 
+.notificationBlock {
+    color: #800080;
+    background: rgba(255, 255, 255);
+    z-index: 555;
+    margin-top: -2.5em;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    align-self: flex-end;
+    font-weight: 500;
+}

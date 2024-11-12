@@ -15,6 +15,7 @@ const CardDetail = ({dataArray, setData}) => {
 
     const [isEditFormVisible, setEditFormVisible] = useState(false)
     const [isHalper, setHalper] = useState(false)
+    const [isNotification, setNotification] = useState(false)
 
     const handleEdit = () => {
         setEditFormVisible(true)
@@ -43,9 +44,14 @@ const CardDetail = ({dataArray, setData}) => {
 
     const editTitle = (e) => {
         const updateTitle = dataArray.map(task => {
-            if(task.id === taskId) {
+            if(task.id === taskId && e.target.value !== '') {
                 return {...task, title: e.target.value}
-            } 
+            } else {
+                setNotification(true)
+                setTimeout(() => {
+                    setNotification(false)
+                }, 4000)
+            }
             return task
         })
         setData(updateTitle)
@@ -61,6 +67,13 @@ const CardDetail = ({dataArray, setData}) => {
                     
                     <button onClick={() => setEditFormVisible(false)} className={s.doneButton}><img className={s.doneIcon} src={YesIcon} /></button>
                     <textarea maxLength='70' onChange={editTitle} className={s.textTitle}>{task.title}</textarea>
+                    {
+                        isNotification
+                        ? <div className={s.notificationBlock}>
+                            this field cannot be empty
+                        </div>
+                        : null
+                    }
                     <textarea maxLength='400' onChange={editDescription} className={s.description}>{task.description || 'This task has no description'}</textarea>
                     {
                         !isHalper ? <div className={s.halper}>Now you can change title or description</div> : null

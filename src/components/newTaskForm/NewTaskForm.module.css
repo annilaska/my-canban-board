@@ -5,10 +5,13 @@
     transform: translate(-50%, -50%);
     z-index: 4;
     background-color: #242424;
-    width: 45em;
-    height: 28em;
+    /* width: 45em;
+    height: 28em; */
+    width: 50%;
+    height: 55%;
     box-sizing: border-box;
-    padding: 2em 4em;
+    /* padding: 1em 1em; */
+    padding: 2em 6em;
     text-align: center;
     border-radius: 1em;
     display: flex;
@@ -47,7 +50,8 @@
 
 
 .descriptionInput, .titleInput {
-    width: 30em;
+    /* width: 30em; */
+    width: 100%;
     box-sizing: border-box;
     resize: none;
     font-family: 'Nunito Sans';
@@ -57,10 +61,12 @@
     background: #424249;
     color: rgba(255, 255, 255, 0.87);
     padding: 1em 1.5em;
+   
 }
 
 .titleInputEmpty {
-    width: 30em;
+    /* width: 30em; */
+    width: 100%;
     box-sizing: border-box;
     border: 0.1em solid #a006a0;
     resize: none;
@@ -78,8 +84,9 @@
 }
 
 .submitButton {
-    margin-bottom: 0.5em;
-    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-right: -4em;
+    /* margin-top: 0.5em; */
     background: #800080;
     border: none;
     padding: 0.7em;
@@ -125,4 +132,41 @@
     padding: 0.5em 1em;
     align-self: flex-end;
     font-weight: 500;
+}
+
+
+@media (max-width: 1030px) {
+    .formBlock {
+        width: 50%;
+        padding: 1em 4em;
+    }
+
+    .submitButton {
+        margin-right: -2em;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .formBlock {
+        width: 70%;
+        padding: 1em 4em;
+    }
+
+    .submitButton {
+        margin-right: -2em;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .formBlock {
+        width: 90%;
+        padding: 1em 1em;
+    }
+
+    .submitButton {
+        margin-bottom: 1em;
+        margin-right: 0;
+    }
 }

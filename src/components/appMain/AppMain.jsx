@@ -10,7 +10,9 @@ const AppMain = props => {
     const router = createBrowserRouter([
         {path: '/', element: <Board {...props} />},
         {path: '/cardDetail/:taskId', element: <CardDetail {...props} />}
-    ])
+    ],
+    { basename: '/my-canban-board/' } 
+)
       
     
     return (
